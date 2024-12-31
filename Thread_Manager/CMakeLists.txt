@@ -3,5 +3,9 @@ project(Thread_Manager C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Thread_Manager hw_thread.c
-        main.c)
+include_directories(.)
+
+add_executable(Thread_Manager
+    hw_thread.c
+        main.c
+        hw_thread.h)
